@@ -29,7 +29,8 @@
         <!-- Items -->
         <div class="collapse navbar-collapse" id="topNavBar">
             <ul class="nav navbar-nav">
-                <li class="{% block register_active %}{% endblock %}"><a href="#">Register</a>
+                <li class="{% block register_active %}{% endblock %}"><a
+                        href="{% url 'accounts:register' %}">Register</a>
                 </li>
                 <li class="{% block login_active %}{% endblock %}"><a href="{% url 'accounts:login' %}">Log In</a>
                 </li>

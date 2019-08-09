@@ -28,3 +28,6 @@ class song(models.Model):
 
     def __str__(self):
         return self.song_title
+
+    def get_absolute_url(self):
+        return reverse('music:songs', kwargs={'filter_by': 'all'})
